@@ -1,66 +1,50 @@
-**E-Puck Robot Maze Solver**
+# E-Puck Maze Solver with Line Following
 
-**Description:**
-This project involves programming an E-Puck robot to navigate through a maze, avoid obstacles, collect boxes, and follow a line using various sensors and actuators. The robot is equipped with infrared sensors, proximity sensors, light sensors, a camera, and ground sensors to perceive its environment and make decisions accordingly.
+## Overview
 
-**Features:**
-1. **Maze Navigation:** The robot is capable of navigating through a maze environment using infrared sensors to detect obstacles and determine the optimal path to follow.
+This project involves programming an E-Puck robot to navigate a maze, manipulate boxes, and follow a line. The robot utilizes various sensors, including proximity sensors, ground sensors, and cameras, to perceive its environment and make decisions accordingly.
 
-2. **Obstacle Avoidance:** It employs proximity sensors to detect obstacles in its path and adjusts its trajectory to avoid collisions.
+## Features
 
-3. **Box Detection and Handling:** The robot can detect boxes using a camera and make decisions based on their colors. It is programmed to collect specific boxes while avoiding others.
+- **Maze Navigation**: The robot is capable of autonomously navigating through a maze using proximity sensors to detect obstacles and determine the appropriate path.
+- **Box Manipulation**: It can interact with boxes placed within the maze, pushing them along the path to clear the way or collecting them for specific tasks.
+- **Line Following**: The robot employs ground sensors to track and follow a line, enabling precise movement along designated paths.
+- **Color Recognition**: Utilizing cameras, the robot can identify the colors of objects, allowing it to make decisions based on the detected colors.
 
-4. **Line Following:** Utilizing ground sensors, the robot can follow lines marked on the maze floor, enabling it to navigate through designated paths.
+## Components
 
-**Dependencies:**
-- Webots Simulator: The project is developed and tested using the Webots simulation environment.
-- Python Controller: The robot's behavior is programmed using Python scripts within the Webots environment.
+- **Sensors**: Proximity sensors, ground sensors, and cameras are used to perceive the robot's surroundings and gather relevant information.
+- **Actuators**: Motors control the movement of the robot's wheels, enabling it to navigate and manipulate objects.
+- **Control Logic**: The core logic of the robot, including decision-making algorithms, PID controllers for motor control, and object detection routines.
 
-**Instructions:**
-1. **Setup:**
-   - Ensure that Webots Simulator is installed on your system.
-   - Clone this repository to your local machine.
+## Operation
 
-2. **Execution:**
-   - Open the Webots Simulator.
-   - Load the provided robot model and world file.
-   - Run the Python controller script within Webots to start the simulation.
+1. **Line Following**: The robot starts by following a line using ground sensors until it reaches a designated point.
+2. **Color Detection**: Upon reaching the designated point, the robot uses cameras to detect the colors of nearby objects, such as boxes.
+3. **Maze Navigation**: Based on the detected colors, the robot decides its path through the maze, avoiding certain boxes and collecting others.
+4. **Box Manipulation**: As the robot progresses through the maze, it interacts with boxes using its actuators to clear obstacles or accomplish specific tasks.
+5. **End Goal**: The ultimate objective is to successfully navigate the maze, collect required items, and reach the end point.
 
-3. **Interacting with the Robot:**
-   - The robot will begin navigating through the maze autonomously.
-   - Observe the console output for debugging information and status updates.
-   - You can modify the code to tweak the robot's behavior or add new functionalities.
+## Future Enhancements
 
-**Additional Notes:**
-- The provided code is well-commented to facilitate understanding and modification.
-- Experiment with different parameters and algorithms to optimize the robot's performance in maze-solving tasks.
-- Feel free to contribute to this project by proposing enhancements or reporting issues.
+- **Path Planning**: Implementing advanced path planning algorithms to optimize the robot's navigation through the maze.
+- **Object Recognition**: Enhancing object recognition capabilities to identify and classify objects more accurately.
+- **Collision Avoidance**: Improving collision avoidance strategies to enable smoother and more efficient movement in complex environments.
 
-**Credits:**
-This project is developed by [Your Name] and is inspired by the E-Puck robot platform and maze-solving algorithms.
+## Usage
 
-**License:**
-This project is licensed under the [License Name] license. See the LICENSE file for details.
+To replicate and experiment with this project:
 
-**Contact Information:**
-For inquiries or feedback, please contact [Your Email Address].
+1. Set up the E-Puck robot with the required sensors and actuators.
+2. Install the necessary dependencies and libraries as specified in the project's documentation.
+3. Upload the provided code to the robot's control unit.
+4. Calibrate and fine-tune the robot's parameters to suit the specific maze environment.
+5. Run the program and observe the robot's behavior as it navigates the maze and completes tasks.
 
-**Acknowledgments:**
-We would like to thank the developers of Webots Simulator for providing a robust platform for robot simulation and experimentation. Special thanks to [Any other acknowledgments or credits].
+## Credits
 
-**Version History:**
-- Version 1.0: Initial Release (Date)
+This project was developed as part of paractical project of the robotic course at Damascus university
 
-**Changelog:**
-- [Brief description of changes for each version update]
 
-**Future Enhancements:**
-- [List of potential improvements or features to be added in future updates]
+For any inquiries or support, please contact [hayanjaber6@gmail.com].
 
-**References:**
-- [List of any external resources or references used in the project]
-
-**Troubleshooting:**
-- If you encounter any issues or errors, please refer to the documentation or seek assistance from the community forums.
-
-**Enjoy exploring the maze with your E-Puck robot!**
